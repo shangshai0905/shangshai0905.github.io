@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shaira's E-magazine</title>
+    <link rel="stylesheet" href="emagazineCOVER.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body>
+    <header id="nav">
+        <div class="logo1">
+            <a href="emagazineCOVER.html"><img src="images/logo.png" alt="logo" ></a>
+        </div>
+                <a href="emagazineHOME.html" class="home">Home</a>
+
+            <div class="dropdown">
+                <button class="dropdown-btn">Destinations
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                    <div class="desti-dropdown">
+                        <a href="destiLUZON.html">Luzon</a>
+                        <a href="destiVISAYAS.html">Visayas</a>
+                        <a href="destiMINDANAO.html">Mindanao</a>
+                    </div>
+            </div>
+
+                <a href="emagazineTRAVEL.html" class="travel">Travel</a>
+                <a href="#acti" class="act">Activities</a>
+                <a href="#news" class="news">News</a>
+                <a href="#contact" class="contact">Contact</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars fa-lg"></i> <!--menu icon-->
+                </a>
+
+        <div class="logo2">
+          <img src="images/lg.png" alt="Logo">
+        </div>
+    </header>
+      
+
+<!-- javascript for header -->
+    <script>
+      function myFunction() {
+        var x = document.getElementById("nav");
+        if (x.className === "header") {
+          x.className += " responsive";
+        } else {
+          x.className = "header";
+        }
+      }
+    </script>
+
+
+<div class="content">
+    <p class="PH">Philippines</p>
+    <p class="home">is HOME of</p>
+    <p class="beau">Beautiful</p>
+    <p class="beaches">BEACHES</p>
+</div>
+
+
+<div class="gallery">
+    <div class="image2">
+        <img src="images/Paradise-Beach-Bantayan-Island.jpg" alt="bantayan beach">
+    </div>
+    <div class="image3">
+        <img src="images/boracay.png" alt="boracay beach">
+    </div>
+    <div class="image4">
+        <img src="images/el_nido_hidden_beach.jpg" alt="elnido beach">
+    </div>
+</div>
+
+<div class="slideshow">
+    <img class="mySlides" src="images/oslob.jpg" alt="oslob beach" >
+    <img class="mySlides" src="images/kalangaman2.jpg" alt="kalangaman beach">
+    <img class="mySlides" src="images/pink beach northern samar.jpg" alt="pink beach">
+    <img class="mySlides" src="images/sambawan.jpg" alt="sambawan beach">
+</div>
+
+<script>
+    var myIndex = 0;
+    carousel();
+    
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+      }
+      myIndex++;
+      if (myIndex > x.length) {myIndex = 1}    
+      x[myIndex-1].style.display = "block";  
+      setTimeout(carousel, 2000); // Change image every 2 seconds
+    }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="destiVISAYAS.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+    <title>Shaira's E-magazine</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-md fixed-top">
+
+            <a href="emagazineCOVER.html" class="navbar-brand ms-3">
+                <img src="images/logo.png" alt="Logo">
+            </a>
+
+                <button type="button" class="navbar-toggler bg-light me-4" data-bs-toggle="collapse" data-bs-target="#navbarcollapse">
+
+                    <!-- menu icon -->
+                    <span class="navbar-toggler-icon"></span>
+
+                </button>
+
+                    <div class="collapse navbar-collapse text-center" id="navbarcollapse">
+                                <!-- Menu Bar -->
+                        <div class="navbar-nav m-auto">
+                            <a href="emagazineHOME.html" class="nav-item nav-link text-black ">
+                                Home
+                            </a>
+
+                            <div class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-black ms-lg-5 ms-md-3" data-bs-toggle="dropdown" role="button">
+                                    Destinations
+                                </a>
+                                        <!-- Destinations Dropdown Menu -->
+                                    <div class="dropdown-menu dropdown-menu-end text-center text-black">
+                                        <a href="destiLUZON.html" class="dropdown-item ">
+                                            Luzon
+                                        </a>
+                                        <a href="destiVISAYAS.html" class="dropdown-item text-black active">
+                                            Visayas
+                                        </a>
+                                        <a href="destiMINDANAO.html" class="dropdown-item">
+                                            Mindanao
+                                        </a>
+                                    </div>
+
+                            </div>
+
+                            <a href="emagazineTRAVEL.html" class="nav-item nav-link text-black ms-lg-5 ms-md-3">
+                                Travel
+                            </a>
+                            <a href="#acti" class="nav-item nav-link text-black ms-lg-5 ms-md-3">
+                                Activities
+                            </a>
+                            <a href="#news" class="nav-item nav-link text-black ms-lg-5 ms-md-3">
+                                News
+                            </a>
+                            <a href="#contact" class="nav-item nav-link text-black ms-lg-5 ms-md-3">
+                                Contact
+                            </a>
+                        </div>
+
+                        <div class="logo1">
+                            <img src="images/lg.png" alt="logo">
+                        </div>
+                    </div>
+    </nav>
+
+    <div class="content">
+        <h1 class="title mb-4">Some of Beaches located in Visayas</h1>
+        
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-5">
+            <div class="col d-flex justify-content-center mb-lg-5">
+                <div class="card">
+                    <img class="card-img-top" src="images/kalangaman2.jpg" alt="KALANGAMAN ISLAND">
+
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Kalangaman Island, Leyte</h5>
+                        <p class="card-text">Kalanggaman Island is a small island paradise located in Palampon, Leyte. It is famous for its crystal clear waters, lush palm trees, and beautiful sandbars on both ends. The island is also considered one of the most beautiful island beaches in the Philippines.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col d-flex justify-content-center mt-sm-5 mt-md-5 mb-lg-5">
+                <div class="card">
+                    <img class="card-img-top" src="images/sambawan.jpg" alt="SAMBAWAN ISLAND">
+
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Sambawan Island. Biliran</h5>
+                        <p class="card-text">
+                            Sambawan island is a marine sanctuary and a popular dive site. It has an extensive wealth of marine life, good visibility and corals that are in good condition. Turtles, sea snakes and reef sharks are also found there often. Current is mild and suitable for all range of divers.
+                        </p>
+
+                        <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#sambawan">
+                        <p class="see mb-0">See More..</p> 
+                        </button>
+                    
+                    <!-- The Modal -->
+                        <div class="modal modal-sm" id="sambawan">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                            
+                                    <!-- Modal Header -->
+                                    <div class="modal-header">
+                                        <h4 class="modal-title">Sambawan Island. Biliran</h4>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                    </div>
+                            
+                                    <!-- Modal body -->
+                                    <div class="modal-body">
+                                        The semi- curved beach with soaring rock formations covered with green grass as a backdrop create a bubble of fantasy that you are entering another dimension.
+                                        <br> <br>
+                                        Sambawan Island is located 5km of the west coast of Maripipi Municipality, south of the Samar sea, is fast becoming the most visited attraction by the tourists.
+                                        <br> <br>
+                                        Sambawan Island is Biliran’s answer to paradise. White sands, thriving marine life and warm blue waters lapping up the tree-lined shore is a must for those wanting escape from reality. 
+
+                                    </div>
+                            
+                                    <!-- Modal footer -->
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col d-flex justify-content-center mt-sm-5 mt-md-5 mb-md-5">
+                <div class="card">
+                    <img class="card-img-top" src="images/boracay.png" alt="WHITE BEACH BORACAY">
+
+                    <div class="card-body">
+                        <h5 class="card-title text-center">White Beach, Boracay</h5>
+                        <p class="card-text">Boracay Island’s White Beach is the most famous beach in the Philippines.  The premier destination for the ultimate paradise experience. </p>
+
+                        <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#boracay">
+                        <p class="see mb-0">See More..</p> 
+                        </button>
+                    
+                            <!-- The Modal -->
+                        <div class="modal modal-sm" id="boracay">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                            
+                                    <!-- Modal Header -->
+                                    <div class="modal-header">
+                                        <h4 class="modal-title">White Beach, Boracay</h4>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                    </div>
+                            
+                                    <!-- Modal body -->
+                                    <div class="modal-body">
+                                        White Beach is about four kilometers long and its coast is dotted with hotels, restaurants, resorts, shops, and other businesses associated with tourism.
+                                        <br> <br>
+                                        White Beach is known worldwide for its long stretch of powdery white sand and pristine water. Almost everyone who travels to Boracay for leisure stay in this area. White Beach is divided into three boat stations – Station 1 where the sand is the finest and where most luxury resorts are located, Station 2 the busiest and most crowded due to concentration of restaurants, resorts, bars and shops, and the more laidback and less crowded Station 3 where cheaper accommodation can be found. 
+                                        <br> <br>
+                                        Take note that there is no physical barrier of some sort to separate the stations. Anyone can explore any station any time of the day.
+                                    </div>
+                            
+                                    <!-- Modal footer -->
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col d-flex justify-content-center mt-sm-5 mt-md-5 mb-md-5">
+                <div class="card">
+                    <img class="card-img-top" src="images/oslob.jpg" alt="OSLOB CEBU">
+
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Oslob, Cebu</h5>
+                        <p class="card-text">Oslob is a tiny seaside town located on the southernmost edge of the Cebu mainland. It has lately become a popular tourist site due to whale shark expeditions.</p>
+
+                        <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#oslob">
+                        <p class="see mb-0">See More..</p> 
+                        </button>
+                    
+                            <!-- The Modal -->
+                        <div class="modal modal-sm" id="oslob">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                            
+                                    <!-- Modal Header -->
+                                    <div class="modal-header">
+                                        <h4 class="modal-title">Oslob, Cebu</h4>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                    </div>
+                            
+                                    <!-- Modal body -->
+                                    <div class="modal-body">
+                                        The Whale Sharks on the Oslob Whale Shark Snorkel trip are natural creatures that come and go as they want. The floats you see on the surface are just delineating a no-go zone for powered boats.
+                                        <br> <br>
+                                        Diving and snorkeling are time-and people-limited activities that are done in batches. Each group is given 30 minutes to see or swim with the whale sharks. Prior to that, there will be an instructive discussion and presentation about Whale Sharks, as well as strict rules that must be followed throughout the activity.
+                                    </div>
+                            
+                                    <!-- Modal footer -->
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col d-flex justify-content-center mt-sm-5 mt-md-0 mb-md-5 mt-lg-5">
+                <div class="card">
+                    <img class="card-img-top" src="images/philippines-bantayan-paradise-beach.jpg" alt="PARADISE BEACH BANTAYAN ISLAND">
+
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Paradise Beach, Bantayan Island</h5>
+                        <p class="card-text">Crystal clear, vibrant blue waters and powdery soft sand await you at Paradise Beach Bantayan, so make sure to add this Bantayan Island tourist spot to your itinerary.</p>
+
+                        <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#bantayan">
+                        <p class="see mb-0">See More..</p> 
+                        </button>
+                    
+                            <!-- The Modal -->
+                        <div class="modal modal-sm" id="bantayan">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                            
+                                    <!-- Modal Header -->
+                                    <div class="modal-header">
+                                        <h4 class="modal-title">Paradise Beach, Bantayan Island</h4>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                    </div>
+                            
+                                    <!-- Modal body -->
+                                    <div class="modal-body">
+                                        There’s no doubt Bantayan Island is home to some of the best beaches in Cebu, but Paradise Beach Bantayan may just be the best on the island. A visit to Paradise Beach Bantayan will make you feel miles away from the rest of the world, tucked away on your own little private oasis.
+                                        <br> <br>
+                                        Puerto Galera is also a famous place to go to if you want to try diving. There are available diving lessons and diving activities you can opt to avail. Other water activities such as snorkeling, jet skiing and kayaking. 
+                                    </div>
+                            
+                                    <!-- Modal footer -->
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col d-flex justify-content-center mt-sm-5 mt-md-0 mb-md-5 mt-lg-5">
+                <div class="card">
+                    <img class="card-img-top" src="images/pink beach northern samar.jpg" alt="Pink Beach, Northern Samar">
+
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Pink Beach, Northern Samar</h5>
+                        <p class="card-text">
+                            The Pink Beach is already unique on its own because this beach belongs to a family of islands called the Naranjo Group which all have white sand beaches.</p>
+
+                        <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#pinkbeach">
+                        <p class="see mb-0">See More..</p> 
+                        </button>
+                    
+                            <!-- The Modal -->
+                        <div class="modal modal-sm" id="pinkbeach">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                            
+                                    <!-- Modal Header -->
+                                    <div class="modal-header">
+                                        <h4 class="modal-title">Pink Beach, Northern Samar</h4>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                    </div>
+                            
+                                    <!-- Modal body -->
+                                    <div class="modal-body">
+                                        The “Pink Beach” of Sila Island in San Vicente, Northern Samar.
+                                        The Pink Beach was also originally white like its island siblings but its teenage years kicked in and started getting influenced by its environment.
+                                        <br> <br>
+                                        Thousands of years of deposits from the sea of crushed shells and corals started to make their way into the island, slowly mixing with the fine, white sands and eventually giving the sand its pink hue.
+                                        <br> <br>
+                                        The Pink Beach seems like any normal white sand beach on a cloudy day but when the sun is at its peak, the island also starts to turn pink as if it was sunbathing. To fully appreciate the beauty of the island, it is best to visit it during the dry season which lasts from February to May.
+                                    </div>
+                            
+                                    <!-- Modal footer -->
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

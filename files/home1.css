@@ -1,0 +1,532 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    font-family: Georgia;
+}
+body {
+    background: url(images/bg.jpg) no-repeat fixed;
+    background-size: cover;
+}
+  
+header {
+    overflow: hidden;
+    background-color: rgb(211, 211,211,0.8);
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+}
+/* Animation for Title Name */
+.name .ph {
+    float: left;
+    font-size: 18px;
+    font-family: lucida calligraphy;
+    position: relative;
+    animation-name: ph;
+    animation-duration: 5s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+
+}
+@keyframes ph {
+    0%   {left:0px; top:10px;}
+    100% {left:40px; top:10px;}
+}
+
+.name .beach {
+    float: right;
+    font-size: 18px;
+    font-family: lucida calligraphy;
+    margin-top: 25px;
+    position: relative;
+    animation-name: beach;
+    animation-duration: 5s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+  }
+  
+@keyframes beach {
+    0%   {right:80px; top:20px;}
+    100% {right:130px; top:20px;}
+}
+
+
+/* MENU ICON */
+header .icon {
+    color: white;
+    background: black;
+    position: absolute;
+    right: 0;
+    top: 0px;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    padding-left: 23px;
+    padding-right: 23px;
+    cursor:pointer;
+}
+
+/* Logo */
+header .logo1 a{
+    padding: 14px 16px;
+    float: left;
+}
+header .logo1 img {
+    width: 70px;
+    overflow: hidden;
+}
+
+/* DESTINATION BUTTON */
+.dropdown .dropdown-btn {
+    padding: 14px 16px;
+    text-decoration: none;
+    display: block;
+    border: none;
+    background: none;
+    width: 100%;
+    cursor: pointer;
+}
+
+/* destination dropdown content */
+.desti-dropdown {
+    display: none;
+    background-color: rgba(0,0,0, 0.9);
+    color: rgb(214, 213, 213);
+    position: relative;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* BLOCK to make the Destination button when hovering will show */
+.dropdown:hover .desti-dropdown {
+    display: block;
+}
+
+
+/* Code for Curtain Menu*/
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    /* z-index to make it on top */
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+/* Parent container of Menu Links */
+.overlay-content {
+    position: relative;
+    top: 15%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* Links and button */
+.overlay a, .overlay button {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(214, 213, 213);
+    display: block;
+    transition: 0.3s;
+}
+      
+.overlay a:hover, header a:hover, .icon:hover , .dropdown:hover .dropdown-btn,
+.desti-dropdown a:hover {
+    background-color: #ddd;
+    color: black;
+}
+      
+.overlay .closebtn {
+    position: absolute;
+    font-size: 50px;
+}
+      /* SCREEN for Curtain Menu */
+    @media screen and (max-height: 450px) {
+        .overlay a, .overlay button {font-size: 20px}
+        .overlay .closebtn {
+        top: 15px;
+        right: 35px;
+        font-size: 40px;
+        }
+    }
+
+.history{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 10% auto auto 30%;
+    grid-template-areas: 
+    "title title"
+    "iframe text1"
+    "iframe text1"
+    "text2 text2";
+    background-color: rgba(0,0,0, 0.6);
+    border-radius: 5%;
+    color: whitesmoke;
+    margin: 20px;
+}
+.history .title {
+    grid-area: title;
+}
+.history iframe {
+    grid-area: iframe;
+    width:100%;
+    height:100%; 
+    border: 0;
+    padding: 10px;
+}
+.history .text1 {
+    grid-area: text1;
+}
+.history .text1 , .text2, .title, .why .title1 , .text3, .text4, .text5{
+    font-size: 12px;
+    padding: 10px;
+    text-shadow: black 1px 1px 1px;
+}
+.history .title, .why .title1 {
+    font-size: 25px;
+    text-align: center;
+    color: aquamarine;
+    text-shadow: black 1px 1px 1px;
+}
+.history .text2 {
+    grid-area: text2;
+}
+.why {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: 
+    "title1 title1"
+    "text3 text4"
+    "text5 text5";
+    background-color: rgba(0,0,0, 0.6);
+    border-radius: 5%;
+    color: whitesmoke;
+    margin: 20px;
+}
+.why .title1 {
+    grid-area: title1;
+    font-size: 20px;
+}
+.why .text3 {
+    grid-area: text3;
+}
+.why .text4 {
+    grid-area: text4;
+
+}
+.why .text5 {
+    grid-area: text5;
+}
+.carousel-inner .carousel-caption h3,.carousel-inner .carousel-caption p {
+    background-color: rgba(0,0,0, 0.3);
+}
+
+
+        /* Screen for small device */
+    @media screen and (max-width: 450px) {
+        .history{
+            display: grid;
+            grid-template-columns: auto auto;
+            grid-template-rows: auto auto auto;
+            grid-template-areas: 
+            "title title"
+            "iframe iframe"
+            "text1 text2";
+            background-color: rgba(0,0,0, 0.6);
+            border-radius: 5%;
+            color: whitesmoke;
+            margin: 20px;
+        }
+    }
+        /* Screen for smaller device */
+    @media screen and (max-width: 350px) {
+        @keyframes ph {
+            0%   {left:0px; top:10px;}
+            100% {left:0px; top:10px;}
+        }
+                  
+        @keyframes beach {
+            0%   {right:80px; top:20px;}
+            100% {right:80px; top:20px;}
+        }
+        .name .ph, .name .beach{
+            font-size: 15px;
+        }
+        .history{
+            display: grid;
+            grid-template-columns: auto;
+            grid-template-rows: repeat(4, auto);
+            grid-template-areas: 
+            "title"
+            "iframe"
+            "text1"
+            "text2";
+            background-color: rgba(0,0,0, 0.6);
+            border-radius: 5%;
+            color: whitesmoke;
+            margin: 20px;
+        }
+
+        .history .text1 {
+            margin-bottom: 0;
+        }
+        .history .text2 {
+            margin-top: 0;
+        }
+
+        .why {
+            display: grid;
+            grid-template-columns: repeat(2, auto);
+            grid-template-rows: repeat(4, auto);
+            grid-template-areas: 
+            "title1 title1"
+            "text3 text3"
+            "text4 text4"
+            "text5 text5";
+            background-color: rgba(0,0,0, 0.6);
+            border-radius: 5%;
+        }
+        .why .text3, .why .text4  {
+            margin-bottom: 0;
+        }
+        .why .text5, .why .text4  {
+            margin-top: 0;
+        }
+    }
+
+        /* Screen for smallest device */
+    @media screen and (max-width: 300px) {
+        /* MENU ICON */
+        header .icon {
+            padding-top: 20px;
+            padding-bottom: 20px;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+        /* Logo */
+        header .logo1 a{
+            padding: 14px 10px;
+            float: left;
+        }
+        header .logo1 img {
+            width: 40px;
+            overflow: hidden;
+        }
+            @keyframes ph {
+                    0%   {left:0px; top:10px;}
+                    100% {left:0px; top:10px;}
+            }
+                          
+            @keyframes beach {
+                    0%   {right:60px; top:10px;}
+                    100% {right:60px; top:10px;}
+            }
+        .name .ph, .name .beach{
+                    font-size: 15px;
+        }
+    }
+
+        /* Screen for Tablet device that is not too wide */
+    @media screen and (min-width: 500px){
+        @keyframes ph {
+            0%   {left:0px; top:10px;}
+            100% {left:40px; top:10px;}
+        }
+        .name .ph, .name .beach{
+            font-size: 30px;
+        }
+        @keyframes beach {
+            0%   {right:90px; top:25px;}
+            100% {right:130px; top:25px;}
+        }
+            
+        /* MENU ICON */
+        header .icon {
+            padding-top: 38px;
+            padding-bottom: 38px;
+            padding-left: 25px;
+            padding-right: 25px;
+        }    
+        header .icon i {
+            font-size: 32px;
+        }       
+        /* Logo */
+        header .logo1 img {
+            width: 100px;
+        }
+        header .logo1 a{
+            padding: 14px 10px;
+        }
+
+        .history .text1 , .text2, .title, .why .title1 , .text3, .text4, .text5{
+            font-size: 15px;
+            padding: 10px;
+            text-shadow: black 1px 1px 1px;
+        }
+        .history .title, .why .title1 {
+            font-size: 30px;
+            text-align: center;
+            color: aquamarine;
+            text-shadow: black 1px 1px 1px;
+        }
+    }
+
+        /* Screen for Tablet device */
+    @media screen and (min-width: 700px){
+        @keyframes ph {
+            0%   {left:0px; top:10px;}
+            100% {left:100px; top:10px;}
+        }
+        .name .ph, .name .beach{
+            font-size: 30px;
+        }
+        @keyframes beach {
+            0%   {right:90px; top:25px;}
+            100% {right:200px; top:25px;}
+        }
+        .history{
+            display: grid;
+            grid-template-columns: auto auto;
+            grid-template-rows: repeat(3, auto);
+            grid-template-areas: 
+            "title title"
+            "iframe text1"
+            "iframe text2";
+            background-color: rgba(0,0,0, 0.6);
+            border-radius: 5%;
+            color: whitesmoke;
+            margin: 20px;
+        }
+        .history iframe {
+            height: 95%;
+        }
+        .history .text1 {
+            margin-bottom: 0;
+        }
+        .history .text2 {
+            margin-top: 0;
+        }
+        .why {
+            display: grid;
+            grid-template-columns: repeat(3, auto);
+            grid-template-rows: repeat(2, auto);
+            grid-template-areas: 
+            "title1 title1 title1"
+            "text3 text4 text5";
+        }
+        .why .text5 {
+            font-size: 28px;
+            color: antiquewhite;
+        }
+        .history .text1 , .text2, .text3, .text4{
+            font-size: 18px;
+        }
+    }
+            /* Screen for Tablet device */
+    @media screen and (min-width: 700px){
+        @keyframes ph {
+            0%   {left:0px; top:10px;}
+            100% {left:100px; top:10px;}
+        }
+        .name .ph, .name .beach{
+            font-size: 30px;
+        }
+        @keyframes beach {
+            0%   {right:90px; top:25px;}
+            100% {right:200px; top:25px;}
+        }
+        .history{
+            display: grid;
+            grid-template-columns: auto auto;
+            grid-template-rows: repeat(3, auto);
+            grid-template-areas: 
+            "title title"
+            "iframe text1"
+            "iframe text2";
+            background-color: rgba(0,0,0, 0.6);
+            border-radius: 5%;
+            color: whitesmoke;
+            margin: 20px;
+        }
+        .history iframe {
+            height: 95%;
+        }
+        .history .text1 {
+            margin-bottom: 0;
+        }
+        .history .text2 {
+            margin-top: 0;
+        }
+        .why {
+            display: grid;
+            grid-template-columns: repeat(3, auto);
+            grid-template-rows: repeat(3, auto);
+            grid-template-areas: 
+            "title1 title1 title1"
+            "text5 text3 text3"
+            "text5 text4 text4";
+        }
+        .why .text5 {
+            font-size: 28px;
+            color: antiquewhite;
+            margin-top: 60px;
+        }
+        .history .text1 , .text2, .text3, .text4{
+            font-size: 18px;
+        }
+    }
+        /* Screen for laptop/desktop device */
+        @media screen and (min-width: 900px){
+            @keyframes ph {
+                0%   {left:0px; top:10px;}
+                100% {left:200px; top:10px;}
+            }
+            .name .ph, .name .beach{
+                font-size: 30px;
+            }
+            @keyframes beach {
+                0%   {right:90px; top:25px;}
+                100% {right:300px; top:25px;}
+            }
+            .history{
+                display: grid;
+                grid-template-columns: 35% auto auto;
+                grid-template-rows: auto auto;
+                grid-template-areas: 
+                "none title title"
+                "iframe text1 text2";
+                background-color: rgba(0,0,0, 0.6);
+                border-radius: 5%;
+                color: whitesmoke;
+                margin: 20px;
+            }
+            .history iframe {
+                height: 95%;
+            }
+            .why {
+                display: grid;
+                grid-template-columns: repeat(3, auto);
+                grid-template-rows: repeat(3, auto);
+                grid-template-areas: 
+                "title1 title1 title1"
+                "text3 text4 text5"
+                "text3 text4 text5";
+            }
+            .why .text5 {
+                font-size: 28px;
+                color: antiquewhite;
+                margin-top: 0;
+            }
+            
+        }
+    
+        
