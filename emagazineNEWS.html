@@ -4,12 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
-    
+    <link rel="stylesheet" href="emagazineNEWS.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 
-    <title>Shaira's E-magazine</title>
+    <title>Shaira's Emagazine</title>
 </head>
 <body>
     <nav class="navbar navbar-expand-md fixed-top">
@@ -38,7 +37,7 @@
                             </a>
                                     <!-- Destinations Dropdown Menu -->
                                 <div class="dropdown-menu dropdown-menu-end text-center text-black">
-                                    <a href="destiLUZON.html" class="dropdown-item active text-black">
+                                    <a href="destiLUZON.html" class="dropdown-item">
                                         Luzon
                                     </a>
                                     <a href="destiVISAYAS.html" class="dropdown-item">
@@ -48,7 +47,6 @@
                                         Mindanao
                                     </a>
                                 </div>
-
                         </div>
 
                         <a href="emagazineTRAVEL.html" class="nav-item nav-link text-black ms-lg-5 ms-md-3">
@@ -57,7 +55,7 @@
                         <a href="emagazineACTIVITIES.html" class="nav-item nav-link text-black ms-lg-5 ms-md-3">
                             Activities
                         </a>
-                        <a href="#news" class="nav-item nav-link text-black ms-lg-5 ms-md-3">
+                        <a href="emagazineNEWS.html" class="nav-item nav-link text-black ms-lg-5 ms-md-3">
                             News
                         </a>
                         <a href="#contact" class="nav-item nav-link text-black ms-lg-5 ms-md-3">
@@ -69,52 +67,18 @@
                         <img src="images/lg.png" alt="logo">
                     </div>
                 </div>
-</nav>
+    </nav>
 
 
-<div class="content">
-    <p class="PH">Philippines</p>
-    <p class="home">is HOME of</p>
-    <p class="beau">Beautiful</p>
-    <p class="beaches">BEACHES</p>
-</div>
+    <div class="content">
+        <h2 class="text-center">Latest News</h2>
 
-
-<div class="gallery">
-    <div class="image2">
-        <img src="images/Paradise-Beach-Bantayan-Island.jpg" alt="bantayan beach">
+        <div>
+            <div>
+                <img src="images/cruiseship.jpg" alt="image of cruiseship" class="img-fluid">
+            </div>
+        </div>
     </div>
-    <div class="image3">
-        <img src="images/boracay.png" alt="boracay beach">
-    </div>
-    <div class="image4">
-        <img src="images/el_nido_hidden_beach.jpg" alt="elnido beach">
-    </div>
-</div>
-
-<div class="slideshow">
-    <img class="mySlides" src="images/oslob.jpg" alt="oslob beach" >
-    <img class="mySlides" src="images/kalangaman2.jpg" alt="kalangaman beach">
-    <img class="mySlides" src="images/pink beach northern samar.jpg" alt="pink beach">
-    <img class="mySlides" src="images/sambawan.jpg" alt="sambawan beach">
-</div>
-
-<script>
-    var myIndex = 0;
-    carousel();
     
-    function carousel() {
-      var i;
-      var x = document.getElementsByClassName("mySlides");
-      for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";  
-      }
-      myIndex++;
-      if (myIndex > x.length) {myIndex = 1}    
-      x[myIndex-1].style.display = "block";  
-      setTimeout(carousel, 2000); // Change image every 2 seconds
-    }
-    </script>
-
 </body>
 </html>

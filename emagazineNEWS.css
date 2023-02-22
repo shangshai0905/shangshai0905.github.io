@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    font-family: Georgia;
+}
+body {
+    background: url(images/bg.jpg) no-repeat fixed;
+    background-size: cover;
+}
+nav{
+    background-color: rgb(211, 211,211,0.9);
+}
+nav .navbar-brand img {
+    width: 70px;
+}
+/* logo1 image will hide on small screen */
+#navbarcollapse .logo1 img {
+    width: 90px;
+    display: none;
+}
+/* logo1 image will show after expanding the screen */
+@media screen and (min-width: 768px) {
+    #navbarcollapse .logo1 img {
+        display: block;
+    }
+}
+nav .dropdown-menu {
+    min-width: 70%;
+    position: absolute;
+    background-color: #ddd;
+}
+nav a:hover, .navbar-nav a:hover, .dropdown-menu a:hover {
+    background-color: whitesmoke;
+}
+.content {
+    margin-top: 100px;
+}

@@ -8,157 +8,31 @@ body {
     background: url(images/bg.jpg) no-repeat fixed;
     background-size: cover;
 }
-  
-header {
-    overflow: hidden;
-    background-color: rgb(211, 211,211,0.8);
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-    z-index: 3;
+nav{
+    background-color: rgb(211, 211,211,0.9);
 }
-/* Animation for Title Name */
-.name .ph {
-    float: left;
-    font-size: 18px;
-    font-family: lucida calligraphy;
-    position: relative;
-    animation-name: ph;
-    animation-duration: 5s;
-    animation-direction: alternate;
-    animation-iteration-count: infinite;
-    text-shadow: black 1px 3px 5px;
-
-}
-@keyframes ph {
-    0%   {left:0px; top:10px;}
-    100% {left:40px; top:10px;}
-}
-
-.name .beach {
-    float: right;
-    font-size: 18px;
-    font-family: lucida calligraphy;
-    margin-top: 25px;
-    position: relative;
-    animation-name: beach;
-    animation-duration: 5s;
-    animation-direction: alternate;
-    animation-iteration-count: infinite;
-    text-shadow: black 1px 3px 5px;
-
-  }
-  
-@keyframes beach {
-    0%   {right:80px; top:20px;}
-    100% {right:130px; top:20px;}
-}
-
-
-/* MENU ICON */
-header .icon {
-    color: white;
-    background: black;
-    position: absolute;
-    right: 0;
-    top: 0px;
-    padding-top: 27px;
-    padding-bottom: 27px;
-    padding-left: 23px;
-    padding-right: 23px;
-    cursor:pointer;
-}
-
-/* Logo */
-header .logo1 a{
-    padding: 14px 16px;
-    float: left;
-}
-header .logo1 img {
+nav .navbar-brand img {
     width: 70px;
-    overflow: hidden;
 }
-
-/* DESTINATION BUTTON */
-.dropdown .dropdown-btn {
-    padding: 14px 16px;
-    text-decoration: none;
-    display: block;
-    border: none;
-    background: none;
-    width: 100%;
-    cursor: pointer;
-}
-
-/* destination dropdown content */
-.desti-dropdown {
+/* logo1 image will hide on small screen */
+#navbarcollapse .logo1 img {
+    width: 90px;
     display: none;
-    background-color: rgba(0,0,0, 0.9);
-    color: rgb(214, 213, 213);
-    position: relative;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
 }
-
-/* BLOCK to make the Destination button when hovering will show */
-.dropdown:hover .desti-dropdown {
-    display: block;
-}
-
-/* Code for Curtain Menu*/
-.overlay {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    /* z-index to make it on top */
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: rgba(0,0,0, 0.9);
-    overflow-x: hidden;
-    transition: 0.5s;
-}
-
-/* Parent container of Menu Links */
-.overlay-content {
-    position: relative;
-    top: 15%;
-    width: 100%;
-    text-align: center;
-    margin-top: 30px;
-}
-
-/* Links and button */
-.overlay a, .overlay button {
-    padding: 8px;
-    text-decoration: none;
-    font-size: 20px;
-    color: rgb(214, 213, 213);
-    display: block;
-    transition: 0.3s;
-}
-      
-.overlay a:hover, header a:hover, .icon:hover , .dropdown:hover .dropdown-btn,
-.desti-dropdown a:hover {
-    background-color: #ddd;
-    color: black;
-}
-      
-.overlay .closebtn {
-    position: absolute;
-    font-size: 50px;
-}
-      /* SCREEN for Curtain Menu */
-    @media screen and (max-height: 450px) {
-        .overlay a, .overlay button {font-size: 20px}
-        .overlay .closebtn {
-        top: 15px;
-        right: 35px;
-        font-size: 40px;
-        }
+/* logo1 image will show after expanding the screen */
+@media screen and (min-width: 768px) {
+    #navbarcollapse .logo1 img {
+        display: block;
     }
-
+}
+nav .dropdown-menu {
+    min-width: 70%;
+    position: absolute;
+    background-color: #ddd;
+}
+nav a:hover, .navbar-nav a:hover, .dropdown-menu a:hover {
+    background-color: whitesmoke;
+}
 .history{
     display: grid;
     grid-template-columns: 60% 40%;
@@ -168,10 +42,11 @@ header .logo1 img {
     "iframe text1"
     "iframe text1"
     "text2 text2";
-    background-color: rgba(0,0,0, 0.6);
-    border-radius: 5%;
-    color: whitesmoke;
-    margin: 20px;
+    background-color: rgb(211, 211,211,0.5);
+    margin-top: 100px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
 }
 .history .title {
     grid-area: title;
@@ -189,13 +64,10 @@ header .logo1 img {
 .history .text1 , .text2, .title, .why .title1 , .text3, .text4, .text5{
     font-size: 12px;
     padding: 10px;
-    text-shadow: black 1px 1px 1px;
 }
 .history .title, .why .title1 {
     font-size: 25px;
     text-align: center;
-    color: aquamarine;
-    text-shadow: black 1px 1px 1px;
 }
 .history .text2 {
     grid-area: text2;
@@ -208,9 +80,7 @@ header .logo1 img {
     "title1 title1"
     "text3 text4"
     "text5 text5";
-    background-color: rgba(0,0,0, 0.6);
-    border-radius: 5%;
-    color: whitesmoke;
+    background-color: rgb(211, 211,211,0.5);
     margin: 20px;
 }
 .why .title1 {
@@ -242,10 +112,10 @@ header .logo1 img {
             "title title"
             "iframe iframe"
             "text1 text2";
-            background-color: rgba(0,0,0, 0.6);
-            border-radius: 5%;
-            color: whitesmoke;
-            margin: 20px;
+            margin-top: 100px;
+            margin-left: 20px;
+            margin-right: 20px;
+            margin-bottom: 20px;
         }
     }
         /* Screen for smaller device */
@@ -271,10 +141,10 @@ header .logo1 img {
             "iframe"
             "text1"
             "text2";
-            background-color: rgba(0,0,0, 0.6);
-            border-radius: 5%;
-            color: whitesmoke;
-            margin: 20px;
+            margin-top: 100px;
+            margin-left: 20px;
+            margin-right: 20px;
+            margin-bottom: 20px;
         }
 
         .history .text1 {
@@ -293,8 +163,6 @@ header .logo1 img {
             "text3 text3"
             "text4 text4"
             "text5 text5";
-            background-color: rgba(0,0,0, 0.6);
-            border-radius: 5%;
         }
         .why .text3, .why .text4  {
             margin-bottom: 0;
@@ -372,13 +240,10 @@ header .logo1 img {
         .history .text1 , .text2, .title, .why .title1 , .text3, .text4, .text5{
             font-size: 15px;
             padding: 10px;
-            text-shadow: black 1px 1px 1px;
         }
         .history .title, .why .title1 {
             font-size: 30px;
             text-align: center;
-            color: aquamarine;
-            text-shadow: black 1px 1px 1px;
         }
     }
 
@@ -403,6 +268,10 @@ header .logo1 img {
             "title title"
             "iframe text1"
             "iframe text2";
+            margin-top: 100px;
+            margin-left: 20px;
+            margin-right: 20px;
+            margin-bottom: 20px;
         }
         .history iframe {
             height: 95%;
@@ -424,7 +293,6 @@ header .logo1 img {
         }
         .why .text5 {
             font-size: 28px;
-            color: antiquewhite;
             margin-top: 60px;
         }
         .history .text1 , .text2, .text3, .text4{
@@ -451,10 +319,10 @@ header .logo1 img {
             grid-template-areas: 
             "none title title"
             "iframe text1 text2";
-            background-color: rgba(0,0,0, 0.6);
-            border-radius: 5%;
-            color: whitesmoke;
-            margin: 20px;
+            margin-top: 100px;
+            margin-left: 20px;
+            margin-right: 20px;
+            margin-bottom: 20px;
         }
         .history iframe {
             height: 95%;
@@ -470,7 +338,6 @@ header .logo1 img {
         }
         .why .text5 {
             font-size: 28px;
-            color: antiquewhite;
             margin-top: 0;
         }
                     
