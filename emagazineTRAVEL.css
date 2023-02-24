@@ -37,6 +37,9 @@ nav a:hover, .navbar-nav a:hover, .dropdown-menu a:hover {
     width: 100%;
     height: auto;
 }
+.content {
+    margin-bottom: 50px;
+}
 .title {
     text-align: center;
     font-size: 40px;
@@ -75,5 +78,8 @@ nav a:hover, .navbar-nav a:hover, .dropdown-menu a:hover {
 }
 .card img {
     height: 100%;
+}
+footer{
+    background-color: rgb(211, 211,211,0.9);
 }
 

@@ -38,6 +38,7 @@ nav a:hover, .navbar-nav a:hover, .dropdown-menu a:hover {
     text-align: center;
     padding: 20px;
     text-shadow: rgb(46, 45, 45) 1px 2px 7px;
+
 }
 .content .PH {
     font-size: 40px;
@@ -130,13 +131,16 @@ nav a:hover, .navbar-nav a:hover, .dropdown-menu a:hover {
     display: grid;
     justify-items: center;
     margin-top: 60px;
+    margin-bottom: 100px;
 }
 .slideshow img {
     border: 2px solid black;
     width: 50%;
     height: 90%;
 }
-
+footer{
+    background-color: rgb(211, 211,211,0.9);
+}
     @media screen and (max-width:459px) {
         .content .beaches {
             font-size: 40px;

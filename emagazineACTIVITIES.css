@@ -39,6 +39,7 @@ nav a:hover, .navbar-nav a:hover, .dropdown-menu a:hover {
 }
 .content {
     margin-top: 100px;
+    margin-bottom: 80px;
 }
 .content img {
     position: -webkit-sticky;
@@ -56,6 +57,9 @@ nav a:hover, .navbar-nav a:hover, .dropdown-menu a:hover {
 }
 .content h2 {
     font-size: 15px;
+}
+footer{
+    background-color: rgb(211, 211,211,0.9);
 }
     @media screen and (min-width:576px) {
         .content p {
