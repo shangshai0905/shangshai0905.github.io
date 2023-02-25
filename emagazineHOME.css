@@ -50,6 +50,8 @@ nav a:hover, .navbar-nav a:hover, .dropdown-menu a:hover {
 }
 .history .title {
     grid-area: title;
+    font-family: lucida calligraphy;
+    text-shadow: black 1px 3px 10px;
 }
 .history iframe {
     grid-area: iframe;
@@ -87,6 +89,8 @@ nav a:hover, .navbar-nav a:hover, .dropdown-menu a:hover {
 .why .title1 {
     grid-area: title1;
     font-size: 20px;
+    font-family: lucida calligraphy;
+    text-shadow: black 1px 3px 10px;
 }
 .why .text3 {
     grid-area: text3;
@@ -100,6 +104,7 @@ nav a:hover, .navbar-nav a:hover, .dropdown-menu a:hover {
 }
 .carousel-inner .carousel-caption h3,.carousel-inner .carousel-caption p {
     background-color: rgba(0,0,0, 0.3);
+    color: white;
 }
 footer{
     background-color: rgb(211, 211,211,0.9);

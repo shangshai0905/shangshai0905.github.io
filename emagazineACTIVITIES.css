@@ -57,6 +57,8 @@ nav a:hover, .navbar-nav a:hover, .dropdown-menu a:hover {
 }
 .content h2 {
     font-size: 15px;
+    font-family: lucida calligraphy;
+    text-shadow: black 1px 3px 10px;
 }
 footer{
     background-color: rgb(211, 211,211,0.9);
