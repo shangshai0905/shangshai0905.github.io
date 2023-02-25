@@ -10,7 +10,8 @@ body {
 }
 @font-face {
     font-family: lucida calligraphy;
-  }
+    src: url(LucidaCalligraphyFont.ttf);
+}
 nav{
     background-color: rgb(211, 211,211,0.9);
 }
