@@ -46,6 +46,9 @@ nav a:hover, .navbar-nav a:hover, .dropdown-menu a:hover {
 .content {
     margin-bottom: 80px;
 }
+.luzon {
+    font-size: 50px;
+}
 .card {
     width: 300px;
     height: 200px;
