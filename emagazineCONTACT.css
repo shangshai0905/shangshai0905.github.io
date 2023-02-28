@@ -8,6 +8,10 @@ body {
     background: url(images/bg.jpg) no-repeat fixed;
     background-size: cover;
 }
+@font-face {
+    font-family: lucida calligraphy;
+    src: url(LucidaCalligraphyFont.ttf);
+}
 nav, footer{
     background-color: rgb(211, 211,211,0.9);
 }
@@ -44,13 +48,16 @@ nav a:hover, .navbar-nav a:hover, .dropdown-menu a:hover {
     text-align: center;
     font-family: arial;
 }
+.card .name {
+    font-family: lucida calligraphy;
+    text-shadow: black 1px 1px 3px;
+}
 .title {
     color: grey;
     font-size: 18px;
 }
 .open-button {
     border: none;
-    outline: 0;
     display: inline-block;
     padding: 15px;
     color: white;
