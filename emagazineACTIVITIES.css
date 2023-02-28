@@ -82,3 +82,18 @@ nav a:hover, .navbar-nav a:hover, .dropdown-menu a:hover {
             font-size: 30px;
         }
     }
+
+    /* media screen for navbar */
+    @media screen and (min-width: 992px){
+        .navbar a {
+            font-size: 20px;
+        }
+
+    }
+    @media screen and (min-width: 1200px){
+
+        .navbar a {
+            font-size: 25px;
+        }
+    }
+

@@ -64,3 +64,16 @@ nav a:hover, .navbar-nav a:hover, .dropdown-menu a:hover {
     text-shadow: rgb(46, 45, 45) 1px 2px 7px;
     font-size: 25px;
 }
+    /* media screen for navbar */
+    @media screen and (min-width: 992px){
+        .navbar a {
+            font-size: 20px;
+        }
+
+    }
+    @media screen and (min-width: 1200px){
+
+        .navbar a {
+            font-size: 25px;
+        }
+    }
