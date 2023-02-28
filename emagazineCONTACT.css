@@ -59,10 +59,8 @@ nav a:hover, .navbar-nav a:hover, .dropdown-menu a:hover {
     width: 100%;
     font-size: 18px;
 }
-a {
-    text-decoration: none;
-    font-size: 22px;
-    color: black;
+.content a {
+    font-size: 30px;
 }
 /* The popup chat - hidden by default */
 .chat-popup {
