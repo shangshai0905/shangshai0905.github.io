@@ -46,7 +46,6 @@ nav a:hover, .navbar-nav a:hover, .dropdown-menu a:hover {
     margin-bottom: 80px;
 }
 .content img {
-    position: -webkit-sticky;
     position: sticky;
     top: 100px;
     margin-bottom: 20px;
