@@ -58,16 +58,19 @@ nav a:hover, .navbar-nav a:hover, .dropdown-menu a:hover {
 
 .content .beaches {
     float: right;
-    font-size: 40px;
-    font-family: lucida calligraphy;
     margin-top: 80px;
-    position: relative;
     animation-name: beach;
+
+}
+
+.content .beaches, .content .beau {
     animation-duration: 5s;
     animation-direction: alternate;
     animation-iteration-count: infinite;
-  }
-  
+    font-size: 40px;
+    font-family: lucida calligraphy;
+    position: relative;
+}
 @keyframes beach {
     0%   {right:0px; top:0px;}
     100% {right:100px; top:0px;}
@@ -75,13 +78,7 @@ nav a:hover, .navbar-nav a:hover, .dropdown-menu a:hover {
 
 .content .beau {
     float: left;
-    font-size: 40px;
-    font-family: lucida calligraphy;
-    position: relative;
     animation-name: beau;
-    animation-duration: 5s;
-    animation-direction: alternate;
-    animation-iteration-count: infinite;
 
 }
 @keyframes beau {
@@ -139,7 +136,6 @@ footer{
 }
     @media screen and (max-width:459px) {
         .content .beaches {
-            font-size: 40px;
             margin-top: 80px;
           }
           
@@ -148,7 +144,7 @@ footer{
             100% {right:80px; top:0px;}
         }
         
-        .content .beau {
+        .content .beau, .content .beaches {
             font-size: 40px;
         }
         @keyframes beau {
@@ -158,14 +154,13 @@ footer{
     }
 
     @media screen and (max-width:350px) {
-        .content .PH {
+        .content .PH, .content .beaches, .content .beau {
             font-size: 35px;
         }
         .content .home {
             font-size: 20px;
         }
         .content .beaches {
-            font-size: 35px;
             margin-top: 50px;
           }
           
@@ -174,23 +169,19 @@ footer{
             100% {right:50px; top:0px;}
         }
         
-        .content .beau {
-            font-size: 35px;
-        }
         @keyframes beau {
             0%   {left:0px; top:0px;}
             100% {left:50px; top:0px;}
         }
     }
     @media screen and (max-width:280px) {
-        .content .PH {
+        .content .PH, .content .beaches {
             font-size: 25px;
         }
         .content .home {
             font-size: 18px;
         }
         .content .beaches {
-            font-size: 25px;
             margin-top: 20px;
           }
           
