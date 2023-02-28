@@ -197,6 +197,30 @@ nav a:hover, .navbar-nav a:hover, .dropdown-menu a:hover {
             margin-top: 100px;
         }
     }
+    @media screen and (max-width:232px) {
+        .content .PH, .content .beaches, .content .beau {
+            font-size: 25px;
+        }
+        .content .home {
+            font-size: 18px;
+        }
+        .content .beaches {
+            margin-top: 10px;
+        }
+          
+        @keyframes beach {
+            0%   {right:0px; top:0px;}
+            100% {right:0px; top:0px;}
+        }
+        
+        @keyframes beau {
+            0%   {left:0px; top:0px;}
+            100% {left:0px; top:0px;}
+        }
+        .gallery {
+            margin-top: 100px;
+        }
+    }
 
     @media screen and (min-width:750px) { /*tablet*/
         .content .PH {
