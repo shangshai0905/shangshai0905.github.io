@@ -12,7 +12,7 @@ body {
     font-family: lucida calligraphy;
     src: url(LucidaCalligraphyFont.ttf);
 }
-nav{
+nav, footer{
     background-color: rgb(211, 211,211,0.9);
 }
 nav .navbar-brand img {
@@ -131,9 +131,7 @@ nav a:hover, .navbar-nav a:hover, .dropdown-menu a:hover {
 .carousel-inner img {
     width: 100%;
 }
-footer{
-    background-color: rgb(211, 211,211,0.9);
-}
+    /* small screen size */
     @media screen and (max-width:459px) {
         .content .beaches {
             margin-top: 80px;
@@ -152,7 +150,7 @@ footer{
             100% {left:80px; top:0px;}
         }
     }
-
+    /* smaller screen size */
     @media screen and (max-width:350px) {
         .content .PH, .content .beaches, .content .beau {
             font-size: 35px;
@@ -174,6 +172,7 @@ footer{
             100% {left:50px; top:0px;}
         }
     }
+    /* smallest screen size */
     @media screen and (max-width:280px) {
         .content .PH, .content .beaches, .content .beau {
             font-size: 25px;

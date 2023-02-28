@@ -12,7 +12,7 @@ body {
     font-family: lucida calligraphy;
     src: url(LucidaCalligraphyFont.ttf);
 }
-nav{
+nav, footer{
     background-color: rgb(211, 211,211,0.9);
 }
 nav .navbar-brand img {
@@ -23,12 +23,12 @@ nav .navbar-brand img {
     width: 90px;
     display: none;
 }
-/* logo1 image will show after expanding the screen */
-@media screen and (min-width: 768px) {
-    #navbarcollapse .logo1 img {
-        display: block;
+    /* logo1 image will show after expanding the screen */
+    @media screen and (min-width: 768px) {
+        #navbarcollapse .logo1 img {
+            display: block;
+        }
     }
-}
 nav .dropdown-menu {
     min-width: 70%;
     position: absolute;
@@ -44,12 +44,9 @@ nav a:hover, .navbar-nav a:hover, .dropdown-menu a:hover {
     text-align: center;
     font-size: 50px;
     font-family: lucida calligraphy;
-    text-shadow: black 1px 3px 10px;
+    text-shadow: black 1px 1px 3px;
 }
 
-footer{
-    background-color: rgb(211, 211,211,0.9);
-}
 .content img {
     width: 100%;
     height: 100%;

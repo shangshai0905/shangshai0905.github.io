@@ -12,7 +12,7 @@ body {
     font-family: lucida calligraphy;
     src: url(LucidaCalligraphyFont.ttf);
 }
-nav{
+nav, footer{
     background-color: rgb(211, 211,211,0.9);
 }
 nav .navbar-brand img {
@@ -62,24 +62,23 @@ nav a:hover, .navbar-nav a:hover, .dropdown-menu a:hover {
     background-color: whitesmoke;
     font-size: 20px;
     font-family: lucida calligraphy;
-    text-shadow: black 1px 3px 10px;
+    text-shadow: black 1px 1px 3px;
 }
-footer{
-    background-color: rgb(211, 211,211,0.9);
-}
+    /* medium screen */
     @media screen and (min-width:576px) {
         .content p {
             font-size: 15px;
         }
         .content h2 {
             font-size: 25px;
+        }
     }
-}
+    /* larger screen */
     @media screen and (min-width:768px) {
         .content p {
             font-size: 20px;
         }
         .content h2 {
             font-size: 30px;
+        }
     }
-}

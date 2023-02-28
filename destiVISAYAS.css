@@ -12,7 +12,7 @@ body {
     font-family: lucida calligraphy;
     src: url(LucidaCalligraphyFont.ttf);
 }
-nav{
+nav, footer{
     background-color: rgb(211, 211,211,0.9);
 }
 nav .navbar-brand img {
@@ -57,19 +57,10 @@ nav a:hover, .navbar-nav a:hover, .dropdown-menu a:hover {
 .card img {
     height: 100%;
 }
-.card-text {
-    font-size: small;
-}
-.modal-body {
-    font-size: small;
-}
-.see {
+.card-text, .modal-body, .see {
     font-size: small;
 }
 .card-title {
     text-shadow: rgb(46, 45, 45) 1px 2px 7px;
     font-size: 25px;
-}
-footer{
-    background-color: rgb(211, 211,211,0.9);
 }
