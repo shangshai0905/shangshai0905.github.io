@@ -60,7 +60,7 @@ nav a:hover, .navbar-nav a:hover, .dropdown-menu a:hover {
     background-color: rgb(211, 211,211,0.5);
 }
 .content h2 {
-    background-color: #ddd;
+    background-color: whitesmoke;
     font-size: 20px;
     font-family: lucida calligraphy;
     text-shadow: black 1px 3px 10px;
