@@ -7,6 +7,9 @@
 body {
     background: url(images/bg.jpg) no-repeat fixed;
     background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 nav, footer{
     background-color: rgb(211, 211,211,0.9);
@@ -112,6 +115,9 @@ nav a:hover, .navbar-nav a:hover, .dropdown-menu a:hover {
 }
 .open-button:hover {
     background-color: red;
+}
+footer {
+    margin-top: auto;
 }
 
     @media screen and (max-width:336px) {

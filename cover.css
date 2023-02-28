@@ -7,6 +7,9 @@
 body {
     background: url(images/bg.jpg) no-repeat fixed;
     background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 @font-face {
     font-family: lucida calligraphy;
@@ -130,6 +133,9 @@ nav a:hover, .navbar-nav a:hover, .dropdown-menu a:hover {
 }
 .carousel-inner img {
     width: 100%;
+}
+footer {
+    margin-top: auto;
 }
     /* small screen size */
     @media screen and (max-width:459px) {

@@ -7,6 +7,9 @@
 body {
     background: url(images/bg.jpg) no-repeat fixed;
     background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 @font-face {
     font-family: lucida calligraphy;
@@ -110,7 +113,9 @@ nav a:hover, .navbar-nav a:hover, .dropdown-menu a:hover {
     background-color: rgba(0,0,0, 0.3);
     color: white;
 }
-
+footer {
+    margin-top: auto;
+}
         /* Screen for small device */
     @media screen and (max-width: 450px) {
         .history{
