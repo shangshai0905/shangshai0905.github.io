@@ -175,7 +175,7 @@ footer{
         }
     }
     @media screen and (max-width:280px) {
-        .content .PH, .content .beaches {
+        .content .PH, .content .beaches, .content .beau {
             font-size: 25px;
         }
         .content .home {
@@ -190,9 +190,6 @@ footer{
             100% {right:0px; top:0px;}
         }
         
-        .content .beau {
-            font-size: 25px;
-        }
         @keyframes beau {
             0%   {left:0px; top:0px;}
             100% {left:0px; top:0px;}
