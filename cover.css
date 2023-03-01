@@ -34,7 +34,7 @@ nav .dropdown-menu {
     position: absolute;
     background-color: #ddd;
 }
-nav a:hover, .navbar-nav a:hover, .dropdown-menu a:hover {
+.navbar-nav a:hover, .dropdown-menu a:hover {
     background-color: whitesmoke;
 }
 
