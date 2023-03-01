@@ -37,8 +37,11 @@ nav .dropdown-menu {
     position: absolute;
     background-color: #ddd;
 }
-.navbar-nav a:hover, .dropdown-menu a:hover {
+.navbar-nav a:hover{
     background-color: whitesmoke;
+}
+.navbar-nav a:hover {
+    border-radius: 20px;
 }
 .content .title{
     margin-top: 100px;
