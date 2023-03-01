@@ -40,7 +40,7 @@ nav .dropdown-menu {
 .navbar-nav a:hover{
     background-color: whitesmoke;
 }
-.navbar-nav a {
+.navbar-nav .nav-link {
     border-radius: 20px;
 }
 .content .title{
