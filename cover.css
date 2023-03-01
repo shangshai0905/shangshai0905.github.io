@@ -151,6 +151,9 @@ nav .dropdown-menu {
             0%   {left:0px; top:0px;}
             100% {left:80px; top:0px;}
         }
+        .gallery .image2, .gallery .image4 {
+            margin-top: 30px;
+        }
     }
     /* smaller screen size */
     @media screen and (max-width:350px) {
@@ -172,6 +175,9 @@ nav .dropdown-menu {
         @keyframes beau {
             0%   {left:0px; top:0px;}
             100% {left:50px; top:0px;}
+        }
+        .gallery .image2, .gallery .image4 {
+            margin-top: 25px;
         }
     }
     /* smallest screen size */
@@ -198,6 +204,9 @@ nav .dropdown-menu {
         .gallery {
             margin-top: 100px;
         }
+        .gallery .image2, .gallery .image4 {
+            margin-top: 20px;
+        }
     }
     @media screen and (max-width:232px) {
         .content .PH, .content .beaches, .content .beau {
@@ -221,6 +230,9 @@ nav .dropdown-menu {
         }
         .gallery {
             margin-top: 100px;
+        }
+        .gallery .image2, .gallery .image4 {
+            margin-top: 15px;
         }
     }
 
@@ -271,6 +283,11 @@ nav .dropdown-menu {
     }
 }
 
+@media screen and (min-width:1000px) { /*too wide laptop/desktop*/
+    .gallery .image2, .gallery .image4 {
+        margin-top: 70px;
+    }
+}
 @media screen and (min-width:1200px) { /*too wide laptop/desktop*/
     @keyframes beach {
         0%   {right:0px; top:0px;}
