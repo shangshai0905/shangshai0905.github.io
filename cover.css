@@ -37,10 +37,9 @@ nav .dropdown-menu {
 .navbar-nav a:hover{
     background-color: whitesmoke;
 }
-.navbar-nav a:hover {
+.navbar-nav a {
     border-radius: 20px;
 }
-
 .content {
     text-align: center;
     padding: 20px;
