@@ -70,49 +70,16 @@
                     </div>
                 </div>
     </nav>
-
-    <div class="container content">
-        <div class="card">
-            <img src="images/grad2.png" alt="John" style="width:100%">
-            <h1 class="name">Shaira De Leon Honrejas</h1>
-            <p class="title">Website Developer</p>
-            <p>Kodego</p>
-
-            <div style="margin: 24px 0;">
-                <a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter me-5"></i></a>  
-                <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook me-5"></i></a> 
-                <a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"></i></a> 
-            </div>
-            <button class="open-button" onclick="openForm()">Send Feedback</button>
-        </div>
         
-            <div class="chat-popup" id="chat">
-                <form action="https://formsubmit.co/honrejasshaira@gmail.com" method="POST" class="form-container">
-                    <input type="text" name="_honey" style="display:none;">
-                    <input type="text" name="_captcha" value="false">
-                    <input type="hidden" name="_next" value="https://shangshai0905.github.io/contactsuccess.html">
-
-
-                    <h1>Feedback</h1>
-
-                    <label for="msg"><b>Message</b></label>
-                    <textarea placeholder="Type message.." name="msg" required></textarea>
-
-                    <button type="submit" class="btn">Send</button>
-                    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
-                </form>
+    
+    <div class="container content">
+        <div class="card mt-5">
+            <div class="card-body">
+                <p>Your Message has been submitted! Thank you for your feedback</p>
             </div>
+        </div>
     </div>
 
-<script>
-function openForm() {
-  document.getElementById("chat").style.display = "block";
-}
-
-function closeForm() {
-  document.getElementById("chat").style.display = "none";
-}
-</script>
 
     <footer class="container-fluid align-bottom text-center pt-3 pb-1">
         <p>Copyright &copy; 2023 All Rights Reserved</p>
