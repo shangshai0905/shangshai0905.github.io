@@ -70,6 +70,18 @@ nav .dropdown-menu {
 .card-text {
     font-size: 13px;
 }
+.card-text input {
+    width: 30px;
+    text-align: center;
+    user-select: none;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    background-color: transparent;
+}
+.card-text .rates {
+    width: 60px;
+}
 .modal-body {
     font-size: small;
 }
